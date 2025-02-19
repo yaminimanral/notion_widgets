@@ -32,7 +32,7 @@
 
     .icon {
       /* Change the icon size here */
-      font-size: 2em;
+      font-size: 1.5em;
       /* Change the icons colours here*/
       color: #7a7a7a
     }
@@ -43,7 +43,7 @@
     }
 
     .email:hover {
-      color: #23c8c8;
+      color: #CFE4FD;
     }
 
     .facebook:hover {
@@ -55,7 +55,7 @@
     }
 
     .linkedin:hover {
-      color: #0e76a8;
+      color: #CFE4FD;
     }
 
     .twitter:hover {
@@ -109,6 +109,11 @@
       </div>
       <!-- End linkedin Icon -->
 
+      <!-- Start github Icon -->
+      <div id="github" onclick="navigate(this.id)" class="social">
+        <span class="icon github"><i class="fab fa-github"></i></span>
+      </div>
+      <!-- End github Icon -->
     </div>
 
 
@@ -152,6 +157,9 @@
         }
         else if (id === "telegram") {
           window.open("https://web.telegram.org/", '_blank').focus(); //Add the url to your telegram account
+        }
+        else if (id == "github") {
+          window.open("https://github.com/yaminimanral", '_blank').focus();
         }
       }
 
